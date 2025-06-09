@@ -8,28 +8,31 @@
           <div class="skill-group" v-for="n in 2" :key="n">
             <div class="flex items-center gap-20">
               <div class="flex items-center gap-4">
-                <i class="devicon-vuejs-plain  text-5xl"></i><span class="text-2xl font-bold text-white">Vue</span>
+                <i class="devicon-vuejs-plain text-5xl"></i><span class="text-2xl font-bold text-white">Vue</span>
               </div>
               <div class="flex items-center gap-4">
-                <i class="devicon-html5-plain  text-5xl"></i><span class="text-2xl font-bold text-white">HTML</span>
+                <i class="devicon-html5-plain text-5xl"></i><span class="text-2xl font-bold text-white">HTML</span>
               </div>
               <div class="flex items-center gap-4">
-                <i class="devicon-css3-plain  text-5xl"></i><span class="text-2xl font-bold text-white">CSS</span>
+                <i class="devicon-css3-plain text-5xl"></i><span class="text-2xl font-bold text-white">CSS</span>
               </div>
               <div class="flex items-center gap-4">
-                <i class="devicon-tailwindcss-plain  text-5xl"></i><span class="text-2xl font-bold text-white">Tailwind</span>
+                <i class="devicon-tailwindcss-plain text-5xl"></i><span class="text-2xl font-bold text-white">Tailwind</span>
               </div>
               <div class="flex items-center gap-4">
-                <i class="devicon-react-original  text-5xl"></i><span class="text-2xl font-bold text-white">React Native</span>
+                <i class="devicon-react-original text-5xl"></i><span class="text-2xl font-bold text-white">React Native</span>
               </div>
               <div class="flex items-center gap-4">
                 <i class="devicon-figma-plain text-5xl"></i><span class="text-2xl font-bold text-white">Figma</span>
               </div>
               <div class="flex items-center gap-4">
-                <i class="devicon-photoshop-plain  text-5xl"></i><span class="text-2xl font-bold text-white">Photoshop</span>
+                <i class="devicon-photoshop-plain text-5xl"></i><span class="text-2xl font-bold text-white">Photoshop</span>
               </div>
               <div class="flex items-center gap-4">
-                <i class="devicon-aftereffects-plain  text-5xl"></i><span class="text-2xl font-bold text-white">After Effects</span>
+                <i class="devicon-aftereffects-plain text-5xl"></i><span class="text-2xl font-bold text-white">After Effects</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="devicon-wordpress-plain text-5xl"></i><span class="text-2xl font-bold text-white">WordPress</span>
               </div>
             </div>
           </div>
@@ -43,14 +46,13 @@
 
 </script>
 
-
 <style scoped>
 .about-bg {
   background-color: #01010A;
 }
 
 .marquee {
-  background-color: #0A0A1A	;
+  background-color: #0A0A1A;
   border-top: 5px solid #88005F;
   border-bottom: 5px solid #88005F;
   padding: 100px 0;
@@ -83,4 +85,3 @@
   }
 }
 </style>
-
