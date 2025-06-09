@@ -66,7 +66,7 @@
 .skill-group {
   display: flex;
   gap: 16px;
-  padding-right: 64px; /* just enough to not crush the edge */
+  padding-right: 64px;
 }
 
 @keyframes scroll-left {
