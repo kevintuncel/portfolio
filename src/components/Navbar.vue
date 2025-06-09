@@ -1,7 +1,7 @@
 <template>
  <div class="flex justify-around bg-transparent nav p-4">
    <button class="monospace text-sm">CONTACT</button>
-   <h5 class="inter font-bold text-xl">KEVIN TUNCEL</h5>
+   <h5 class="inter font-bold text-xl"><a href="/">KEVIN TUNCEL</a></h5>
    <button class="monospace menu-button text-sm">MENU</button>
  </div>
 </template>
@@ -12,7 +12,7 @@
 
 <style>
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

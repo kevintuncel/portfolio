@@ -1,35 +1,80 @@
 <template>
-  <div class="relative h-screen overflow-hidden flex items-center justify-around page-bg bg-black">
-    <div>
-      <h1 class="text">Kevin Tuncel</h1>
-      <h3 class="inter text">Web Developer</h3>
-    </div>
-    <div>
-      <a
-          class="text"
-          href="@/assets/CV_KevinTuncel.pdf"
-          download="CV_Kevin_Tuncel"
-      >Download CV</a>
+  <div ref="about" class="relative h-screen overflow-hidden flex flex-col justify-center items-center about-bg">
+    <h2 class="text-white text-5xl font-bold mb-10 z-10">Skills</h2>
+
+    <div class="w-full overflow-hidden marquee">
+      <div class="marquee-content">
+        <div class="marquee-track">
+          <div class="skill-group" v-for="n in 2" :key="n">
+            <div class="flex items-center gap-20">
+              <div class="flex items-center gap-4">
+                <i class="devicon-vuejs-plain  text-5xl"></i><span class="text-2xl font-bold text-white">Vue</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="devicon-html5-plain  text-5xl"></i><span class="text-2xl font-bold text-white">HTML</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="devicon-css3-plain  text-5xl"></i><span class="text-2xl font-bold text-white">CSS</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="devicon-tailwindcss-plain  text-5xl"></i><span class="text-2xl font-bold text-white">Tailwind</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="devicon-react-original  text-5xl"></i><span class="text-2xl font-bold text-white">React Native</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="devicon-figma-plain text-5xl"></i><span class="text-2xl font-bold text-white">Figma</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="devicon-photoshop-plain  text-5xl"></i><span class="text-2xl font-bold text-white">Photoshop</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="devicon-aftereffects-plain  text-5xl"></i><span class="text-2xl font-bold text-white">After Effects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
-<script setup>
-import { onMounted } from 'vue'
-import { gsap } from 'gsap'
-import { SplitText } from 'gsap/SplitText'
 
-gsap.registerPlugin(SplitText)
+<style scoped>
+.about-bg {
+  background-color: #01010A;
+}
 
-onMounted(() => {
-  const split = SplitText.create('.text', { type: 'words' })
+.marquee {
+  border-top: 5px solid #88005F;
+  border-bottom: 5px solid #88005F;
+  padding: 100px 0;
+  position: relative;
+}
 
-  gsap.from(split.words, {
-    y: 100,
-    autoAlpha: 0,
-    stagger: 0.15,
-    duration: 1,
-    ease: 'power2.out',
-  })
-})
-</script>
+.marquee-content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.skill-group {
+  display: flex;
+  gap: 16px;
+  padding-right: 64px; /* just enough to not crush the edge */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>

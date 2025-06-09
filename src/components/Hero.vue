@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-screen overflow-hidden flex flex-col text-center lg:text-left lg:flex-row items-center justify-around page-bg">
+  <div ref="hero" class="relative h-screen overflow-hidden flex flex-col text-center lg:text-left lg:flex-row items-center justify-around page-bg">
     <video
         autoplay
         muted
@@ -15,7 +15,7 @@
 
     <div>
       <h1 class="text">Kevin Tuncel</h1>
-      <h3 class="inter text">Web Developer</h3>
+      <h3 class="inter text">Front-End Web Developer</h3>
     </div>
     <div>
       <a
@@ -30,11 +30,14 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import { gsap } from 'gsap'
 import { SplitText } from 'gsap/SplitText'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(SplitText)
+gsap.registerPlugin(SplitText, ScrollTrigger)
+
+const hero = ref(null)
 
 onMounted(() => {
   const split = SplitText.create('.text', { type: 'words' })
@@ -46,5 +49,16 @@ onMounted(() => {
     duration: 1,
     ease: 'power2.out',
   })
+
+  ScrollTrigger.create({
+    trigger: hero.value,
+    start: 'top top',
+    end: 'bottom top',
+    pin: true,
+    pinSpacing: false,
+    scrub: true,
+  })
 })
 </script>
+
+

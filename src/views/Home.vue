@@ -1,12 +1,6 @@
 <template>
-  <div class="h-screen snap-y snap-mandatory overflow-y-scroll">
-    <section class="h-screen snap-start">
-      <Hero />
-    </section>
-    <section class="h-screen snap-start">
+      <Hero/>
       <About />
-    </section>
-  </div>
 </template>
 
 <script setup>
