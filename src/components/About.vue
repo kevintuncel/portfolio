@@ -39,6 +39,10 @@
   </div>
 </template>
 
+<script setup>
+
+</script>
+
 
 <style scoped>
 .about-bg {
@@ -46,6 +50,7 @@
 }
 
 .marquee {
+  background-color: #0A0A1A	;
   border-top: 5px solid #88005F;
   border-bottom: 5px solid #88005F;
   padding: 100px 0;
@@ -78,3 +83,4 @@
   }
 }
 </style>
+
