@@ -12,7 +12,6 @@
 
 /* Styling */
 * {
-    background-color: #01010A;
     color: white;
 }
 
@@ -27,15 +26,15 @@ h3 {
 }
 
 .menu-button {
-    border: 1px solid #0000FF;
-    color: #0000FF;
+    border: 1px solid #88005F;
+    color: white;
     padding: 5px;
     transition: background-color 0.5s;
     border-radius: 5%;
 }
 
 .menu-button:hover {
-    background-color: #0000FF;
-    color: black;
+    background-color: #88005F;
+    color: white;
     cursor: pointer;
 }
