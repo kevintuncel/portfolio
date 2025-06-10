@@ -53,8 +53,8 @@
 
 .marquee {
   background-color: #0A0A1A;
-  border-top: 5px solid #88005F;
-  border-bottom: 5px solid #88005F;
+  border-top: 5px solid #FF1493;
+  border-bottom: 5px solid #FF1493;
   padding: 100px 0;
   position: relative;
 }
