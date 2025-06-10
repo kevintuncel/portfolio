@@ -4,11 +4,11 @@
       <div class="flex justify-around mb-5">
       <h2 ref="projectsTitle">Projects</h2>
         <div class="flex gap-6">
-          <button>Personal</button>
-          <button>School</button>
+          <button @click="showPersonal()">Personal</button>
+          <button @click="showSchool()">School</button>
         </div>
       </div>
-      <div class="flex flex-col justify-center perspective-container">
+      <div v-show="personal" class="flex flex-col justify-center perspective-container">
         <div>
           <img
               ref="projectImage"
@@ -33,6 +33,19 @@ gsap.registerPlugin(ScrollTrigger)
 const projectsSection = ref(null)
 const projectsTitle = ref(null)
 const projectImage = ref(null)
+
+const personal = ref(true)
+const school = ref(false)
+
+function showPersonal() {
+  personal.value = true
+  school.value = false
+}
+
+function showSchool() {
+  personal.value = false
+  school.value = true
+}
 
 onMounted(() => {
   gsap.set(projectsSection.value, { opacity: 0, y: 50 })
@@ -64,9 +77,9 @@ onMounted(() => {
       toggleActions: "play none none reverse"
     }
   })
-
 })
 </script>
+
 
 <style scoped>
 .projects-bg {
