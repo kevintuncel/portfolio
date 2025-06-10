@@ -1,7 +1,24 @@
 <template>
-  <div  class="h-screen projects-bg">
+  <div class="h-screen projects-bg">
     <div ref="projectsSection" class="container mx-auto p-4 pt-20">
+      <div class="flex justify-around mb-5">
       <h2 ref="projectsTitle">Projects</h2>
+        <div class="flex gap-6">
+          <button>Personal</button>
+          <button>School</button>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center perspective-container">
+        <div>
+          <img
+              ref="projectImage"
+              class="mx-auto w-full max-w-[70%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[60%] xl:max-w-[60%] rounded-lg drop-shadow-xl"
+              src="../assets/thorns.PNG"
+              alt="screenshot of site 'petal & thorn'"
+          />
+          <p class="text-center text-white mt-2 text-xl">Petal & Thorn</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -15,6 +32,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const projectsSection = ref(null)
 const projectsTitle = ref(null)
+const projectImage = ref(null)
 
 onMounted(() => {
   gsap.set(projectsSection.value, { opacity: 0, y: 50 })
@@ -46,11 +64,28 @@ onMounted(() => {
       toggleActions: "play none none reverse"
     }
   })
+
 })
 </script>
 
-<style>
+<style scoped>
 .projects-bg {
   background-color: #E91E63;
+}
+
+.perspective-container {
+  perspective: 1000px;
+}
+
+img {
+  height: auto;
+  display: block;
+  transition: filter 0.5s;
+  filter: none
+}
+
+img:hover {
+  filter: drop-shadow(0 0 0.75rem white);
+  cursor: pointer;
 }
 </style>
