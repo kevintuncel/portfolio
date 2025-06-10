@@ -17,6 +17,11 @@
                 <i class="devicon-css3-plain text-5xl"></i><span class="text-2xl font-bold text-white">CSS</span>
               </div>
               <div class="flex items-center gap-4">
+                <i class="devicon-javascript-plain text-5xl"></i>
+                <span class="text-2xl font-bold text-white">JavaScript</span>
+              </div>
+
+              <div class="flex items-center gap-4">
                 <i class="devicon-tailwindcss-plain text-5xl"></i><span class="text-2xl font-bold text-white">Tailwind</span>
               </div>
               <div class="flex items-center gap-4">
