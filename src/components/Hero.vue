@@ -17,7 +17,7 @@
       <h1 class="text">Kevin Tuncel</h1>
       <h3 class="inter text">Front-End Web Developer</h3>
     </div>
-    <div>
+    <div class="cv">
       <a
           class="text"
           href="@/assets/CV_KevinTuncel.pdf"
@@ -58,7 +58,66 @@ onMounted(() => {
     pinSpacing: false,
     scrub: true,
   })
+
 })
 </script>
+
+<style>
+.cv {
+  animation: breath 2s ease-out infinite;
+}
+
+.cv:hover {
+  animation: none;
+}
+
+@-webkit-keyframes breath {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breath {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+</style>
 
 
