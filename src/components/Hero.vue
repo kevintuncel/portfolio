@@ -20,11 +20,12 @@
     <div class="cv">
       <a
           class="text"
-          href="@/assets/CV_KevinTuncel.pdf"
+          href="/CV_KevinTuncel.pdf"
           download="CV_Kevin_Tuncel"
       >
         Download CV
       </a>
+
     </div>
   </div>
 </template>
