@@ -94,7 +94,7 @@ const projects = [
     id: 'indieradar',
     category: 'school',
     title: 'IndieRadar',
-    photo: new URL('../assets/Afbeelding1.png', import.meta.url).href,
+    photo: new URL('../assets/Afbeelding1.PNG', import.meta.url).href,
     description: 'A platform to discover indie games...',
     video: new URL('../assets/indie.mp4', import.meta.url).href
   },
