@@ -1,6 +1,6 @@
 <template>
   <div ref="about" class="relative h-screen overflow-hidden flex flex-col justify-center items-center about-bg">
-    <h2 class="text-white text-5xl font-bold mb-10 z-10">Skills</h2>
+    <h2 class="text-white text-5xl font-bold mb-10">Skills</h2>
 
     <div class="w-full overflow-hidden marquee">
       <div class="marquee-content">
