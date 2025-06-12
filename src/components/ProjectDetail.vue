@@ -30,7 +30,7 @@
       </template>
 
 <div class="flex flex-col justify-between">
-      <p class="text-lg max-w-3xl text-white leading-relaxed mb-10 w-full lg:w-80">
+      <p class="text-lg max-w-3xl text-white leading-relaxed mb-10 w-full lg:w-80 project-desc">
         {{ project?.description }}
         <template v-if="project?.linkUrl">
           <a
@@ -128,6 +128,10 @@ onMounted(() => {
   background-color: #E91E63;
 }
 
+.project-desc {
+  font-weight: normal;
+}
+
 video {
   box-shadow: none;
   transition: box-shadow 0.3s ease;
@@ -146,4 +150,5 @@ p {
 h1 {
   color: white;
 }
+
 </style>

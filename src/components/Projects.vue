@@ -34,6 +34,7 @@
           />
           <p class="text-center text-white mt-2 text-xl">{{ project.title }}</p>
         </div>
+        <h3 class="text-center opacity-60 my-10">More coming soon...</h3>
       </div>
 
       <div v-if="school" class="flex flex-col gap-12 justify-center perspective-container">
